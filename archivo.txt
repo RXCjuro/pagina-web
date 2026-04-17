@@ -1,0 +1,5 @@
+🟤 Marrón → estructura (header/footer)
+🤍 Crema → fondo
+🌸 Rosado → botones/importante
+🍑 Durazno → detalles
+⚫ Gris → texto
