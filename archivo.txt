@@ -3,3 +3,17 @@
 🌸 Rosado → botones/importante
 🍑 Durazno → detalles
 ⚫ Gris → texto
+
+como iniciar en vsc
+
+1 git pull
+2 Editas en VS Code
+
+como mandar tu trabajo
+
+3 git add .
+4 git commit
+5 git push
+
+git checkout main
+git pull origin main
