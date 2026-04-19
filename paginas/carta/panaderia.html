@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/carousel.css">
+
 
     <style>
         .bg-toñita {
@@ -119,7 +121,96 @@
     </header>
 
     <main>
-        <h3>panaderia</h3>
+        <div id="carouselPanes" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPanes" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselPanes" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselPanes" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Imágenes -->
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="../../img/panes/paneton-artesanal.avif" class="d-block w-100" alt="Pan artesanal">
+                    <div class="carousel-caption">
+                        <h3>Pan Artesanal</h3>
+                        <p>Hecho al horno cada mañana</p>
+                        <p class="precio">S/ 25.00</p>
+                        <button class="btn btn-dark">Comprar</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../../img/panes/croissant.avif" class="d-block w-100" alt="Croissant">
+                    <div class="carousel-caption">
+                        <h3>Croissant</h3>
+                        <p>Suave y crujiente</p>
+                        <p class="precio">S/ 5.00</p>
+                        <button class="btn btn-dark">comprar</button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../../img/panes/pan-redondo-integral.avif" class="d-block w-100" alt="Pan dulce">
+                    <div class="carousel-caption">
+                        <h3>Pan Dulce</h3>
+                        <p>Perfecto para acompañar tu café</p>
+                        <p class="precio">S/ 8.00</p>
+                        <button class="btn btn-dark">Comprar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Nuestros Panes</h2>
+
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="../../img/panes/paneton-artesanal.avif" class="card-img-top img-producto">
+                        <div class="card-body text-center">
+                            <h5>Panetón Artesanal</h5>
+                            <p class="precio">S/ 25.00</p>
+                            <button class="btn btn-dark">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="../../img/panes/croissant.avif" class="card-img-top img-producto">
+                        <div class="card-body text-center">
+                            <h5>Croissant</h5>
+                            <p class="precio">S/ 5.00</p>
+                            <button class="btn btn-dark">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="../../img/panes/pan-redondo-integral.avif" class="card-img-top img-producto">
+                        <div class="card-body text-center">
+                            <h5>Pan Integral</h5>
+                            <p class="precio">S/ 8.00</p>
+                            <button class="btn btn-dark">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!--el pie de la pagina-->
