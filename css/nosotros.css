@@ -1,0 +1,17 @@
+.nosotros-text {
+    max-width: 700px;   /* limita el ancho */
+    text-align: center; /* centra el texto */
+    font-size: 1.2rem;
+    line-height: 1.8;   /* espacio entre líneas */
+    color: #333;
+}
+
+.nosotros-text p {
+    margin-bottom: 20px;
+}
+.nosotros-text {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
