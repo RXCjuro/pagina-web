@@ -1,37 +1,14 @@
-.carousel-item img {
-    height: 600px;
-    object-fit: cover;
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
 }
 
-.custom-caption {
-    right: 5%;
-    left: auto;
-    bottom: 20%;
-    text-align: left;
-    max-width: 450px;
-
-    background: rgb(239, 149, 70);
-    padding: 25px;
-    border-radius: 12px;
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.custom-caption h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.custom-caption p {
-    font-size: 18px;
-    color: #f1f1f1;
-    line-height: 1.5;
-}
-
-.carousel-caption.custom-caption:hover {
-    transform: translateY(-10px) scale(1.05);
+main {
+    flex: 1;
 }
 
 .footer {
