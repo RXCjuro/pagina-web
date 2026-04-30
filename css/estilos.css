@@ -15,11 +15,18 @@ body {
 
 main {
     flex: 1;
+    margin-bottom: 25px;
 }
 
 .carousel-item img {
+    width: 600px;
     height: 600px;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+.carousel-item{
+    height: 500px;
+    object-fit: contain;
 }
 
 .custom-caption {
