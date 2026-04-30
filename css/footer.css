@@ -12,7 +12,7 @@ main {
 }
 
 .footer {
-    margin-top: 50px;
+    margin-top: auto;
     background: linear-gradient(135deg, #8B5E3C, #5a3b2a);
     color: #FFF5E4;
     padding: 40px 20px 20px;
