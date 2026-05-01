@@ -1,68 +1,16 @@
-// SOLO para el index (buscador)
-document.addEventListener("DOMContentLoaded", () => {
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados de búsqueda</title>
+    <link rel="stylesheet" href="css/busqueda.css">
+</head>
+<body>
 
-    const input = document.getElementById("inputBusqueda");
-    const boton = document.getElementById("btnBuscar");
+<h1>Resultados de búsqueda</h1>
 
-    if (input && boton) {
+<div id="resultados"></div>
 
-        function buscar() {
-            let valor = input.value.trim();
-
-            if (valor !== "") {
-                window.location.href = `busqueda.html?q=${encodeURIComponent(valor)}`;
-            }
-        }
-
-        boton.addEventListener("click", buscar);
-
-        input.addEventListener("keypress", function (e) {
-            if (e.key === "Enter") {
-                buscar();
-            }
-        });
-    }
-});
-
-
-// SOLO para busqueda.html (mostrar resultados)
-document.addEventListener("DOMContentLoaded", () => {
-
-    const contenedor = document.getElementById("resultados");
-
-    // si no existe, salir (esto evita errores en index)
-    if (!contenedor) return;
-
-    const params = new URLSearchParams(window.location.search);
-    const query = params.get("q");
-
-    const productos = [
-        { nombre: "Pan francés", categoria: "panaderia" },
-        { nombre: "Croissant", categoria: "panaderia" },
-        { nombre: "Café americano", categoria: "cafeteria" },
-        { nombre: "Capuccino", categoria: "cafeteria" },
-        { nombre: "Sandwich", categoria: "catering" }
-    ];
-
-    if (query) {
-        let resultados = productos.filter(p =>
-            p.nombre.toLowerCase().includes(query.toLowerCase())
-        );
-
-        if (resultados.length > 0) {
-            resultados.forEach(p => {
-                contenedor.innerHTML += `
-                    <div class="card">
-                        <h3>${p.nombre}</h3>
-                        <p>Categoría: ${p.categoria}</p>
-                        <button onclick='agregarAlCarrito(${JSON.stringify(p)})'>
-                            Agregar al carrito
-                        </button>
-                    </div>
-                `;
-            });
-        } else {
-            contenedor.innerHTML = "<p>No se encontraron resultados</p>";
-        }
-    }
-});
+<script src="../JS/carrito.js"></script>
+</body>
+</html>

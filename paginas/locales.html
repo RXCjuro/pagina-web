@@ -97,22 +97,17 @@
                     </ul>
 
                     <div class="d-flex align-items-center gap-2">
-                        <div class="input-group input-group-sm search-box d-none d-md-flex">
-                            <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar">
-                            <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <div class="input-group input-group-sm search-box d-flex">
+                            <input id="inputBusqueda" class="form-control" type="text"
+                                placeholder="Buscar productos...">
+                            <button id="btnBuscar" class="btn btn-dark">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
 
                         <a href="login.html" class="btn btn-sm btn-outline-secondary border-0 ms-2">
                             <i class="fa-solid fa-user me-1"></i> Iniciar Sesión
                         </a>
-
-                        <button class="btn btn-dark btn-sm position-relative ms-2 px-3">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
-                                0
-                            </span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -335,6 +330,7 @@
             }, 800);
         }
     </script>
+    <script src="../JS/buscar.js"></script>
 </body>
 
 
