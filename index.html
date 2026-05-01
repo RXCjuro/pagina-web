@@ -106,20 +106,23 @@
                     </ul>
 
                     <div class="d-flex align-items-center gap-2">
-                        <div class="input-group input-group-sm search-box d-none d-md-flex">
-                            <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar">
-                            <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <div class="input-group input-group-sm search-box d-flex">
+                            <input id="inputBusqueda" class="form-control" type="text"
+                                placeholder="Buscar productos...">
+                            <button id="btnBuscar" class="btn btn-dark">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
 
                         <div id="zonaUsuario" class="ms-2"></div>
 
-                        <button class="btn btn-dark btn-sm position-relative ms-2 px-3">
+                        <a href="paginas/carrito.html" class="btn btn-dark btn-sm position-relative ms-2 px-3">
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <span
+                            <span id="contadorCarrito"
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge">
                                 0
                             </span>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -319,6 +322,8 @@
         crossorigin="anonymous"></script>
     <script src="JS/usuarioActivo.js"></script>
 
+    <script src="JS/carrito.js"></script>
+    <script src="JS/buscar.js"></script>
 </body>
 
 </html>

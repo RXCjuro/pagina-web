@@ -1,0 +1,14 @@
+.card-producto {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card-producto:hover {
+    transform: scale(1.03);
+}
+
+.img-producto {
+    height: 150px;
+    object-fit: cover;
+}

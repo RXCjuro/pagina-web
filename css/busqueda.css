@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
