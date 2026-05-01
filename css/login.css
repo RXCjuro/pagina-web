@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(50, 50, 233, 0.599);
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d67022, #be937d);
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgb(245, 231, 212);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: rgb(114, 114, 117);
+    margin-bottom: 25px;
+}
+
+.grupo-formulario {
+    margin-bottom: 18px;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #336155;
+}
+
+.grupo-formulario input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.grupo-formulario input:focus {
+    border-color: burlywood;
+    box-shadow: 0 0 0 3px rgba(211, 151, 87, 0.536);
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #638de7;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-principal:hover {
+    background-color: #1d4ed8;
+}
+
+.mensaje {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #dc2626;
+}
+
+.texto-enlace {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(114, 114, 117);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toñita | Registro</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h1>Crear Cuenta</h1>
+            <p class="subtitulo">Registrate para comprar en Toñita</p>
+
+            <form id="formRegistro">
+                <div class="grupo-formulario">
+                    <label for="nombreRegistro">Nombre y Apellido</label>
+                    <input type="text" id="nombreRegistro" placeholder="Ingresa tu nombre y apellido">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="correoRegistro">Correo Electronico</label>
+                    <input type="email" id="correoRegistro" placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="claveRegistro">Contraseña</label>
+                    <input type="password" id="claveRegistro" placeholder="Crear una Contraseña">
+                </div>
+
+                <button type="submit" class="btn-principal">
+                    Registrarme
+                </button>
+
+                <p id="mensajeRegistro" class="mensaje"></p>
+            <p class="texto-enlace">¿Ya tienes cuenta? <a href="login.html">Iniciar secion aquí</a></p>
+            </form>
+        </section>
+    </main>
+    <script src="../JS/registro.js"></script>
+</body>
+</html>
