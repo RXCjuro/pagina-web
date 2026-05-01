@@ -18,6 +18,17 @@ main {
     margin-bottom: 25px;
 }
 
+.cerrar-btn{
+    color: #5c2c06;
+    font-weight: bold;
+    font-size: 15px;
+    background: transparent;
+}
+
+.cerrar-btn:hover{
+    color: #d97706;
+}
+
 .carousel-item img {
     width: 600px;
     height: 600px;
