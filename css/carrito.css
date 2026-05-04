@@ -1,14 +1,71 @@
-.card-producto {
+body{
+    background: #f8f5f1;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1{
+    color: #5c2c06;
+    font-weight: bold;
+}
+
+.img-producto{
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-producto{
+    border: none;
     border-radius: 12px;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    background: white;
 }
 
-.card-producto:hover {
-    transform: scale(1.03);
+.card-producto:hover{
+    transform: translateY(-8px);
 }
 
-.img-producto {
-    height: 150px;
-    object-fit: cover;
+.card-producto .card-body h5{
+    color: #5c2c06;
+    font-weight: bold;
+}
+
+.card-producto .card-body p{
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.card-producto .btn-danger{
+    background: #b02a37;
+    border: none;
+    border-radius: 8px;
+}
+
+.card-producto .btn-danger:hover{
+    opacity: 0.9;
+}
+
+.resumen-pago{
+    border-radius: 12px;
+    border: none;
+    background: white;
+}
+
+#total{
+    color: #d97706;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn-success{
+    background: #198754;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-outline-dark{
+    font-weight: bold;
 }

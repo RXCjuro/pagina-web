@@ -93,11 +93,11 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="./paginas/carta/panaderia.html">Cafetería</a></li>
+                                <li><a class="dropdown-item" href="./paginas/carta/cafeteria.html">Cafetería</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="./paginas/carta/panaderia.html">Catering</a></li>
+                                <li><a class="dropdown-item" href="./paginas/carta/catering.html">Catering</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -130,133 +130,106 @@
     </header>
 
     <main>
-        <div class="container mt-4">
-            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+        <section class="hero-principal">
+            <div class="hero-texto">
+                <h1>El aroma que enamora, el sabor que te hace volver</h1>
+                <p>Endulzamos tus mañanas con pan caliente, postres irresistibles y café recién hecho.</p>
+                <a href="#productos" class="btn-hero">Explorar Productos</a>
+            </div>
+        </section>
 
-                <div class="carousel-inner">
+        <section class="beneficios">
+            <div class="beneficio-item">🚚 Delivery rápido</div>
+            <div class="beneficio-item">☕ Café recién preparado</div>
+            <div class="beneficio-item">🥐 Panes horneados al día</div>
+            <div class="beneficio-item">🎉 Catering para eventos</div>
+        </section>
 
-                    <!-- carousel 1-->
-                    <div class="carousel-item active">
-                        <img src="./img/panes.jpg" class="d-block w-100" alt="Panadería">
-                        <div class="carousel-caption custom-caption">
-                            <h2>PANES FRESCOS TODOS LOS DÍAS</h2>
-                            <p>
-                                Disfruta del auténtico sabor artesanal elaborado con ingredientes
-                                seleccionados y horneados cada mañana para ti.
-                            </p>
-                            <a href="paginas/carta/panaderia.html" class="btn btn-warning">Ver Catálogo</a>
-                        </div>
-                    </div>
-                    <!--imagen base-->
-                    <div class="carousel-item">
-                        <img src="img/oferta-pan.webp" class="d-block w-100" alt="Promociones">
-                        <div class="carousel-caption custom-caption">
-                            <h2>PROMOCIONES ESPECIALES</h2>
-                            <p>
-                                Aprovecha nuestros combos familiares, tortas y panes dulces
-                                con descuentos exclusivos.
-                            </p>
-                            <a href="productos.html" class="btn btn-warning">Comprar Ahora</a>
-                        </div>
-                    </div>
+        <section class="productos-destacados" id="productos">
+            <h2>Nuestros Productos Destacados</h2>
 
+            <div class="contenedor-productos">
+
+                <div class="producto-card">
+                    <img src="img/panes/pan-frances.jpg" alt="">
+                    <h4>Pan Francés Artesanal</h4>
+                    <p>S/0.50 c/u</p>
+                    <button onclick="agregarAlCarrito({
+                        nombre:'Pan Francés Artesanal',
+                        categoria:'Panadería',
+                        precio:0.50,
+                        imagen:'img/panes/pan-frances.jpg'
+                    })">Ordenar Ahora</button>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
-
-
-        <div class="container mt-4">
-            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <!-- carousel 2-->
-                    <div class="carousel-item active">
-                        <img src="./img/cafeteria/3-tazas-de-cafe.jpg" class="d-block w-100" alt="Cafetería">
-                        <div class="carousel-caption custom-caption">
-                            <h2>TIENES TIEMPO DE TOMARTE UN CAFE</h2>
-                            <p>
-                                Disfruta de nuestro café artesanal, preparado con granos de calidad y servido con
-                                amor.
-                            </p>
-                            <a href="paginas/carta/cafeteria.html" class="btn btn-warning">Ver Catálogo</a>
-                        </div>
-                    </div>
-                    <!--imagen base-->
-                    <div class="carousel-item">
-                        <img src="img/cafe-promo.jpeg" class="d-block w-100" alt="Promociones">
-                        <div class="carousel-caption custom-caption">
-                            <h2>PROMOCIONES ESPECIALES</h2>
-                            <p>
-                                Aprovecha nuestros combos familiares, tortas y panes dulces
-                                con descuentos exclusivos.
-                            </p>
-                            <a href="productos.html" class="btn btn-warning">Comprar Ahora</a>
-                        </div>
-                    </div>
-
+                <div class="producto-card">
+                    <img src="img/cafeteria/hot-latte.webp" alt="">
+                    <h4>Café Latte Cremoso</h4>
+                    <p>S/8.00</p>
+                    <button onclick="agregarAlCarrito({
+                        nombre:'Café Latte Cremoso',
+                        categoria: 'Cafetería',
+                        precio:8.00,
+                        imagen:'img/cafeteria/hot-latte.webp'
+                        })">Ordenar Ahora</button>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-            </div>
-        </div>
-
-
-        <div class="container mt-4">
-            <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <!-- carousel 3-->
-                    <div class="carousel-item active">
-                        <img src="./img/catering/sandwich.jpg" class="d-block w-100" alt="Catering">
-                        <div class="carousel-caption custom-caption">
-                            <h2>CATERING</h2>
-                            <p>
-                                Sorprende a tus invitados con nuestro servicio de catering, ofreciendo una
-                                deliciosa selección de postres, panes y café para cualquier ocasión.
-                            </p>
-                            <a href="paginas/carta/catering.html" class="btn btn-warning">Ver Catálogo</a>
-                        </div>
-                    </div>
-                    <!--imagen base-->
-                    <div class="carousel-item">
-                        <img src="img/promocion.png" class="d-block w-100" alt="Promociones">
-                        <div class="carousel-caption custom-caption">
-                            <h2>PROMOCIONES ESPECIALES</h2>
-                            <p>
-                                Aprovecha nuestros combos familiares, tortas y panes dulces
-                                con descuentos exclusivos.
-                            </p>
-                            <a href="productos.html" class="btn btn-warning">Comprar Ahora</a>
-                        </div>
-                    </div>
-
+                <div class="producto-card">
+                    <img src="img/catering/torta-chocolate.jpg" alt="">
+                    <h4>Torta de Chocolate</h4>
+                    <p>S/35.00</p>
+                    <button onclick="agregarAlCarrito({
+                        nombre:'Torta de Chocolate',
+                        categoria: 'Catering',
+                        precio:35.00,
+                        imagen:'img/catering/torta-chocolate.jpg'
+                        })">Ordenar Ahora</button>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
-        </div>
+        </section>
+
+        <section class="promo-banner">
+            <h2>¡Combos dulces y café con 20% de descuento!</h2>
+            <p>Aprovecha nuestras promociones especiales de la semana.</p>
+        </section>
+
+        <section class="elegirnos">
+            <h2>¿Por qué elegir Toñita?</h2>
+            <p>En Toñita combinamos tradición, sabor y atención cálida para hacer especial cada visita.</p>
+        </section>
+
+        <section class="categorias-principales">
+            <h2>Nuestras Especialidades</h2>
+
+            <div class="categoria-box">
+                <img src="./img/panes.jpg" alt="">
+                <div class="categoria-info">
+                    <h3>Panadería Artesanal</h3>
+                    <p>Panes frescos horneados cada mañana con recetas tradicionales y sabor casero.</p>
+                    <a href="paginas/carta/panaderia.html">Ver Catálogo</a>
+                </div>
+            </div>
+
+            <div class="categoria-box">
+                <img src="./img/cafeteria/3-tazas-de-cafe.jpg" alt="">
+                <div class="categoria-info">
+                    <h3>Cafetería Premium</h3>
+                    <p>Café recién hecho, postres irresistibles y el mejor acompañamiento para tus mañanas.</p>
+                    <a href="paginas/carta/cafeteria.html">Ver Catálogo</a>
+                </div>
+            </div>
+
+            <div class="categoria-box">
+                <img src="./img/catering/sandwich.jpg" alt="">
+                <div class="categoria-info">
+                    <h3>Servicio de Catering</h3>
+                    <p>Llevamos el sabor de Toñita a tus reuniones, eventos y celebraciones especiales.</p>
+                    <a href="paginas/carta/catering.html">Ver Catálogo</a>
+                </div>
+            </div>
+        </section>
+
 
     </main>
     <!--el pie de la pagina-->

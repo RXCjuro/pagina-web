@@ -24,23 +24,23 @@ function mostrarCarrito() {
         total += precio;
 
         contenedor.innerHTML += `
-            <div class="col-md-4">
-                <div class="card card-producto shadow">
-                    <img src="../img/panes.jpg" class="card-img-top img-producto">
+            <div class="col-md-4 mb-4">
+                <div class="card card-producto shadow h-100">
+                    <img src="../${p.imagen}" class="card-img-top img-producto">
 
-                    <div class="card-body">
-                        <h5>${p.nombre}</h5>
-                        <p>${p.categoria}</p>
-                        <p><strong>S/ ${precio}</strong></p>
+                <div class="card-body text-center">
+                    <h5>${p.nombre}</h5>
+                    <p>${p.categoria}</p>
+                <p><strong>S/ ${precio.toFixed(2)}</strong></p>
 
-                        <button class="btn btn-danger w-100"
-                            onclick="eliminarProducto(${index})">
-                            Eliminar
-                        </button>
-                    </div>
-                </div>
+                <button class="btn btn-danger w-100"
+                    onclick="eliminarProducto(${index})">
+                    Eliminar
+                </button>
             </div>
-        `;
+        </div>
+    </div>
+`;
     });
 
     totalTexto.textContent = "Total a pagar: S/ " + total;
