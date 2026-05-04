@@ -161,9 +161,8 @@ main {
     text-decoration: underline;
 }
 
-/* ===========================
-    HERO PRINCIPAL
-=========================== */
+/* 
+HERO PRINCIPAL*/
 .hero-principal{
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../img/panes.jpg");
     background-size: cover;
@@ -208,9 +207,7 @@ main {
     transform: scale(1.05);
 }
 
-/* ===========================
-    BENEFICIOS
-=========================== */
+/*BENEFICIOS*/
 .beneficios{
     display: flex;
     justify-content: center;
@@ -233,9 +230,7 @@ main {
     transform: translateY(-8px);
 }
 
-/* ===========================
-    PRODUCTOS DESTACADOS
-=========================== */
+/*PRODUCTOS DESTACADOS*/
 .productos-destacados{
     padding: 70px 20px;
     text-align: center;
@@ -299,9 +294,7 @@ main {
     background: #d97706;
 }
 
-/* ===========================
-    PROMO BANNER
-=========================== */
+/*PROMO BANNER*/
 .promo-banner{
     background: linear-gradient(135deg, rgb(239, 149, 70), #d97706);
     color: white;
@@ -318,9 +311,7 @@ main {
     font-size: 20px;
 }
 
-/* ===========================
-    ELEGIRNOS
-=========================== */
+/*ELEGIRNOS*/
 .elegirnos{
     text-align: center;
     padding: 70px 20px;
@@ -340,9 +331,7 @@ main {
     line-height: 1.6;
 }
 
-/* ===========================
-    CATEGORIAS PRINCIPALES
-=========================== */
+/*CATEGORIAS PRINCIPALES*/
 .categorias-principales{
     padding: 70px 20px;
 }
